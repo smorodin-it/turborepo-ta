@@ -15,12 +15,13 @@
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "config": "*",
+    "cross-env": "^7.0.3",
     "react-scripts": "5.0.0",
     "tsconfig": "*",
     "typescript": "^4.6.2"
   },
   "scripts": {
-    "start": "react-scripts start --port 3000",
+    "start": "cross-env PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
