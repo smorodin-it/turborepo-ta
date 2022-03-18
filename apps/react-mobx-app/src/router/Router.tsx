@@ -1,16 +1,13 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SignUpPage from '../pages/SignUpPage';
 
-interface RouterProps {
-  a?: any;
-}
-
-const Router = (props: RouterProps): JSX.Element => {
+const Router = (): JSX.Element => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/"} element={<>TEST</>} />
-        <Route path={"*"} element={<div>Nothing here...</div>} />
+        <Route path={'/'} element={<SignUpPage />} />
+        <Route path={'*'} element={<div>Nothing here...</div>} />
       </Routes>
     </BrowserRouter>
   );
